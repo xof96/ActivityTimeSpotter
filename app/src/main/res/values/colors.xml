@@ -3,6 +3,8 @@
     <color name="colorPrimary">#24292E</color>
     <color name="colorPrimaryDark">#010E1C</color>
     <color name="colorAccent">#5C021E</color>
-    <color name="mainTextColor">#CAFFFF</color>
+    <color name="colorMainText">#CAFFFF</color>
+    <color name="colorBackground">#24292E</color>
+    <color name="colorToolbar">#5C021E</color>
 </resources>
 
