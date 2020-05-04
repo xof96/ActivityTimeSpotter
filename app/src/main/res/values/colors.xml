@@ -6,5 +6,6 @@
     <color name="colorMainText">#CAFFFF</color>
     <color name="colorBackground">#24292E</color>
     <color name="colorToolbar">#5C021E</color>
+    <color name="colorTaskText">#FF5187</color>
 </resources>
 
