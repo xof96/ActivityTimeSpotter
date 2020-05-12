@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nested_scroll_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
@@ -21,6 +22,11 @@
             android:textAlignment="textStart"
             android:textColor="@color/colorMainText"
             android:textSize="20sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/yesterday_tasks_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
         <TextView
             android:id="@+id/today_date_text"
@@ -112,4 +118,4 @@
         </androidx.cardview.widget.CardView>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
-</ScrollView>
+</androidx.core.widget.NestedScrollView>
