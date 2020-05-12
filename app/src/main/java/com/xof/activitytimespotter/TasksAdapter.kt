@@ -16,6 +16,7 @@ class TasksAdapter(private val tasks: List<Task>) :
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun setData(task: Task?, pos: Int) {
             itemView.task_name.text = task!!.name
+            itemView.task_time.text = task.time
         }
     }
 
