@@ -40,7 +40,7 @@
             android:layout_height="24dp"
             android:layout_gravity="center"
             android:layout_margin="5dp"
-            android:background="@drawable/ic_delete_black_24dp" />
+            android:background="@drawable/ic_delete_pink_24dp" />
 
     </LinearLayout>
 
