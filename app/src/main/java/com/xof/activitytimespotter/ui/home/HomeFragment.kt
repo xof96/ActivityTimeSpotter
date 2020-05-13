@@ -40,16 +40,17 @@ class HomeFragment : Fragment() {
 
         viewManagerYesterday = LinearLayoutManager(activity)
         viewAdapterYesterday = TasksAdapter(Supplier.yesterday_tasks)
-        recyclerViewYesterday = root.findViewById<RecyclerView>(R.id.yesterday_tasks_recycler_view).apply {
-            // use this setting to improve performance if you know that changes
-            // in content do not change the layout size of the RecyclerView
-            setHasFixedSize(true)
-            isFocusable = false
-            // use a linear layout manager
-            layoutManager = viewManagerYesterday
-            // specify an viewAdapter (see also next example)
-            adapter = viewAdapterYesterday
-        }
+        recyclerViewYesterday =
+            root.findViewById<RecyclerView>(R.id.yesterday_tasks_recycler_view).apply {
+                // use this setting to improve performance if you know that changes
+                // in content do not change the layout size of the RecyclerView
+                setHasFixedSize(true)
+                isFocusable = false
+                // use a linear layout manager
+                layoutManager = viewManagerYesterday
+                // specify an viewAdapter (see also next example)
+                adapter = viewAdapterYesterday
+            }
 
         val todayDateTextView: TextView = root.findViewById(R.id.today_date_text)
         homeViewModel.todayDateText.observe(viewLifecycleOwner, Observer {
